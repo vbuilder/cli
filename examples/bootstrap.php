@@ -2,7 +2,7 @@
 
 /**
  * @warning This file should be replaced by Composer.
- * @see vBuilder\Cli\ComposerScripts::postAutoloadDump
+ * @see https://github.com/vbuilder/composer-plugin
  */
 
 echo "Error: missing composer autoload\n\n";
