@@ -1,0 +1,35 @@
+{
+	"name": "vbuilder/cli",
+	"type": "library",
+
+	"description": "vBuilder Framework / CLI",
+	"keywords": ["vbuilder", "cli"],
+	"homepage": "http://www.vbuilder.cz",
+	"authors": [
+		{
+			"name": "V3Net.cz, s.r.o.",
+			"homepage": "http://www.v3net.cz"
+		}
+	],
+
+	"require": {
+		"php": ">=5.3.1",
+		"vbuilder/utils": "~0.10.0"
+	},
+
+	"autoload": {
+		"psr-4": {
+			"vBuilder\\": "src/"
+		}
+	},
+
+	"extra": {
+		"branch-alias": {
+			"dev-master": "1.0.x-dev"
+		}
+	},
+
+	"scripts": {
+		"post-autoload-dump": "vBuilder\\Cli\\ComposerScripts::postAutoloadDump"
+	}
+}
