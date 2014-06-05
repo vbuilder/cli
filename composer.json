@@ -26,10 +26,12 @@
 	"extra": {
 		"branch-alias": {
 			"dev-master": "1.0.x-dev"
-		}
-	},
+		},
 
-	"scripts": {
-		"post-autoload-dump": "vBuilder\\Cli\\ComposerScripts::postAutoloadDump"
+		"vbuilder": {
+			"fake-autoloader-files": [
+				"examples/bootstrap.php"
+			]
+		}
 	}
 }
